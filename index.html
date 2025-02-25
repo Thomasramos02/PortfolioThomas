@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Thomas</a>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <nav id="menu">
+            <a href="#" class="active"> Home</a>
+            <a href="./pages/services.html"> Services</a>
+            <a href="./pages/skills.html"> Skills</a>
+            <a href="./pages/education.html"> Education</a>
+            <a href="./pages/contact.html"> Contact</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-img">
+            <img src="img/Sung Jinwoo.jpg" alt="" height="460px">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Thomas</span></h1>
+            <h3 class="typing-text">I'm a Software Developer</h3>
+            <p>My passion for technology started in my childhood, driven by a curiosity to understand how things work and how programming can solve real-world problems. Currently, I am a Software Engineering student at PUC Minas, in my 3rd semester, and I am actively seeking learning opportunities and freelance work to gain practical experience. I always give my best in every project and am constantly striving to improve.</p>
+        </div>
+    </section>
+
+    <script>
+      function toggleMenu() {
+    let menu = document.getElementById("menu");
+    if (menu.style.display === "flex") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "flex";
+    }
+}
+
+    </script>
+</body>
+</html>

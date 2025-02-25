@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Portfolio</title>
+    <link rel="stylesheet" href="../css/services.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo">Thomas</a>
+        <nav id="menu">
+            <a href="../index.html">Home</a>
+            <a href="./services.html" class="active">Services</a>
+            <a href="./skills.html">Skills</a>
+            <a href="./education.html">Education</a>
+            <a href="./contact.html">Contact</a>  
+        
+        </nav>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2 class="section-title">My Projects</h2>
+        
+        <div class="services-container">
+            
+            <!-- Project 1 -->
+            <div class="project">
+                <img src="../img/Alusoft.png" alt="Project 1">
+                <div class="project-content">
+                    <h3>Project 1 - E-commerce</h3>
+                    <p>"This project, called AluSoft, was developed during my time at university. I used my skills in Java, Spring Boot, Spring Security, HTML, CSS, and JavaScript to create it. The project is an e-commerce platform for aluminum and window frame construction, with features like authentication via Spring Security, integrated payments, and an administrative panel."</p>
+                    <a href="#" class="btn">Ver mais</a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project">
+                <img src="../img/HotelGarantido.png" alt="Project 2">
+                <div class="project-content">
+                    <h3>Project 2 - Hotel Management</h3>
+                    <p>Hotel Descanso Garantido is a hotel management system that simplifies the registration and control of clients, employees, and stays. It enables quick searches and efficient stay cost calculations. Originally developed for a hotel in Itacaré-BA, it addressed the issues of the old software used. Built using C and CodeBlocks, it provides an intuitive solution for hotel management.</p>
+                    <a href="#" class="btn">Ver mais</a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project">
+                <img src="../img/ApiClima.png" alt="Project 3">
+                <div class="project-content">
+                    <h3>Project 3 - Weather App for kids</h3>
+                    <p>Weather API for Kids is a simple and easy-to-use weather API designed for children. It provides weather information in an accessible format, with a focus on a fun and educational user experience. Developed with JavaScript, HTML, and CSS, this project aims to introduce kids to weather data in a playful way.</p>
+                    <a href="#" class="btn">Ver mais</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script>
+        function toggleMenu() {
+    let menu = document.getElementById("menu");
+    menu.classList.toggle("active");
+}
+
+    </script>
+</body>
+</html>

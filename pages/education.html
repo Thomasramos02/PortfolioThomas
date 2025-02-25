@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Portfolio</title>
+    <link rel="stylesheet" href="../css/education.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo">Thomas</a>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="./services.html">Services</a>
+            <a href="./skills.html">Skills</a>
+            <a href="./education.html" class="active">Education</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Education Section -->
+    <section class="education">
+        <h2 class="section-title">My Education</h2>
+        
+        <div class="education-container">
+            <div class="education-info">
+                <h3>PUC Minas</h3>
+                <p><strong>Course:</strong> Software Enginner</p>
+                <p><strong>Period:</strong> 2024 - 2028</p>
+                <p>Atualmente estou cursando Engenharia de Software na **PUC Minas**, onde adquiro conhecimento em diversas áreas da computação, como **desenvolvimento de software**, **inteligência artificial**, **banco de dados**, entre outros.</p>
+            </div>
+        </div>
+    </section>
+    <script>
+                 function toggleMenu() {
+    let menu = document.getElementById("menu");
+    menu.classList.toggle("active");
+}
+    </script>
+</body>
+</html>
