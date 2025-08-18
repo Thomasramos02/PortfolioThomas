@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# Portfólio Vinicius Gomes
+# Portfólio Thomás Ramos
 
 Bem-vindo ao código-fonte do meu site pessoal! 👋
 
@@ -103,6 +102,4 @@ Este projeto está licenciado sob a [MIT License](./LICENSE).
 Você pode usar, modificar e distribuir este código, desde que os **devidos créditos sejam dados**, com link para o [original repository](https://github.com/viniciusgomesrod/portfolio). 
 Este projeto foi desenvolvido por [Vinícius Gomes](https://github.com/viniciusgomesrod) e [Thomás Ramos](https://github.com/Thomasramos02) inspirado no portfolio de [Luca Azalim](https://github.com/lucaazalim).
 
-=======
-# Portfolio
->>>>>>> 4efb4674b84faef0810a156b911dd40e3dc95f18
+
