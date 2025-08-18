@@ -1,0 +1,109 @@
+{
+  "hero": {
+    "name": "Thomás Ramos Oliveira",
+    "title": "Estudante de Engenharia de Software",
+    "description": "Sou estudante de Engenharia de Software na PUC Minas, buscando oportunidades de aprendizado e experiência prática. Tenho conhecimento em JavaScript, React, Java, C e tecnologias web como Spring Boot, Vue.js, Bootstrap, HTML5 e CSS3.",
+    "email": "thomasramosoliveira@gmail.com",
+    "phone": "+55 (37) 99975-6056",
+    "location": "Belo Horizonte, MG"
+  },
+  "header": {
+    "about": "Sobre",
+    "projects": "Projetos",
+    "education": "Formação",
+    "contact": "Contato"
+  },
+  "footer": {
+    "resources": "Recursos",
+    "legal": "Legal",
+    "contact": "Contato",
+    "rights": "Todos os direitos reservados."
+  },
+  "educationDashboard": {
+    "sectionTitle": "Minha Formação & Certificações",
+    "degrees": [
+      {
+        "title": "Bacharelado em Engenharia de Software",
+        "institution": "Pontifícia Universidade Católica de Minas Gerais - Fev 2024 - Dez 2027",
+        "details": "Atualmente no 4º período - previsão de conclusão Dez 2027",
+        "buttonText": "Ver Detalhes do Curso"
+      },
+      {
+        "title": "AWS Certified Solutions Architect – Associate",
+        "institution": "Amazon Web Services - Emitido: Dez 2022",
+        "buttonText": "Ver Certificado"
+      }
+    ]
+  },
+  "projectsDashboard": {
+    "heroTitle": "Meus Projetos",
+    "heroSubtitle": "Portfólio de soluções inovadoras e desenvolvimento em diversas áreas tecnológicas.",
+    "featuredProjects": "Projetos em Destaque",
+    "liveDemo": "Demo",
+    "sourceCode": "Código Fonte",
+    "projects": [
+      {
+        "image": "/images/projeto1.jpg",
+        "title": "Plataforma Educacional",
+        "description": "Desenvolvimento de uma plataforma educacional com recursos interativos para aprendizagem online.",
+        "technologies": ["React", "Node.js", "MongoDB"],
+        "date": "Jan 2023 - Jun 2023",
+        "liveDemoUrl": "#",
+        "sourceCodeUrl": "#"
+      },
+      {
+        "image": "/images/projeto2.jpg",
+        "title": "Sistema de Gerenciamento",
+        "description": "Criação de sistema de gerenciamento de tarefas com integração a serviços em nuvem.",
+        "technologies": ["Vue.js", "Spring Boot", "AWS"],
+        "date": "Jul 2023 - Presente",
+        "liveDemoUrl": "#",
+        "sourceCodeUrl": "#"
+      }
+    ]
+  },
+  "workExperience": [
+    {
+      "title": "Estagiário em Desenvolvimento",
+      "info": "Empresa Tech - Mar 2023 - Presente",
+      "description": "Desenvolvimento e manutenção de aplicações web utilizando React e Node.js.",
+      "tags": ["React", "Node.js", "JavaScript"],
+      "buttonText": "Ver Detalhes"
+    }
+  ],
+  "degreeDetails": {
+    "overviewTitle": "VISÃO GERAL",
+    "degreeName": "Engenharia de Software",
+    "description": "Lista detalhada de todas as disciplinas e notas do curso de Engenharia de Software na PUC Minas, mostrando meu progresso de aprendizado em diversas áreas técnicas.",
+    "semester": "Período",
+    "course": "Disciplina",
+    "hours": "C.H.",
+    "modality": "Modalidade",
+    "grade": "Nota",
+    "status": "Status",
+    "average": "Média",
+    "courses": [
+      { "name": "Algoritmos e Estruturas de Dados", "hours": 80, "modality": "Presencial", "grade": 9.2, "status": "Aprovado" },
+      { "name": "Programação Web", "hours": 60, "modality": "Híbrido", "grade": 8.8, "status": "Aprovado" },
+      { "name": "Banco de Dados", "hours": 60, "modality": "Presencial", "grade": 9.0, "status": "Aprovado" }
+    ]
+  },
+  "contactSection": {
+    "sectionTitle": "Entre em Contato",
+    "headerTitle": "Disponível para Oportunidades",
+    "headerSubtitle": "Meu objetivo é transformar ideias em soluções tecnológicas eficientes. Estou aberto para colaborações, discussões de projetos ou troca de conhecimentos.",
+    "emailLabel": "E-MAIL",
+    "whatsappLabel": "WHATSAPP",
+    "locationLabel": "LOCALIZAÇÃO",
+    "nameLabel": "Nome",
+    "subjectLabel": "Assunto",
+    "messageLabel": "Mensagem",
+    "placeholderName": "Seu nome completo",
+    "placeholderEmail": "seu.email@exemplo.com",
+    "placeholderSubject": "Sobre o que deseja conversar?",
+    "placeholderMessage": "Escreva sua mensagem aqui...",
+    "submitBtn": "Enviar Mensagem",
+    "formSentAlert": "Mensagem enviada com sucesso!",
+    "formErrorAlert": "Erro ao enviar mensagem. Por favor, tente novamente."
+  }
+}

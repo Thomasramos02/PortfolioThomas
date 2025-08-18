@@ -1,35 +1,31 @@
 import React from 'react';
-
-const EducationCard = ({ title, institution, details, children }) => (
-  <div className="education-card">
-    <h3>{title}</h3>
-    <p>{institution}</p>
-    {details && <p className="education-detail">{details}</p>}
-    {children}
-  </div>
-);
+import { useTranslation } from 'react-i18next';
 
 function Education({ onNavigateToDegreeDetails }) {
+  const { t } = useTranslation();
+
+  // Pega o array de forma dinâmica usando o i18n
+  const education = t('educationDashboard.degrees', { returnObjects: true });
+
   return (
     <section id="education" className="education-certifications">
-      <h2>My Education & Certifications</h2>
-      <EducationCard
-        title="Bachelor of Science in Software Engineering"
-        institution="Pontifícia Universidade Católica de Minas Gerais - Fev 2021 - Dez 2024"
-        details="Graduated with Honors"
-      >
-        <button
-          className="view-project-btn"
-          style={{ marginTop: '1.5rem' }}
-          onClick={onNavigateToDegreeDetails}
-        >
-          Ver Detalhes do Curso
-        </button>
-      </EducationCard>
-      <EducationCard
-        title="AWS Certified Solutions Architect – Associate"
-        institution="Amazon Web Services - Issued: Dec 2022"
-      />
+      <h2>{t('educationDashboard.sectionTitle')}</h2>
+      {education.map((degree, idx) => (
+        <div key={idx} className="education-card">
+          <h3>{degree.title}</h3>
+          <p>{degree.institution}</p>
+          {degree.details && <p className="education-detail">{degree.details}</p>}
+          {degree.buttonText && (
+            <button
+              className="view-project-btn"
+              style={{ marginTop: '1.5rem' }}
+              onClick={onNavigateToDegreeDetails}
+            >
+              {degree.buttonText}
+            </button>
+          )}
+        </div>
+      ))}
     </section>
   );
 }

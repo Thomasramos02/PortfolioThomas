@@ -9,10 +9,16 @@ import ProjectDashboard from './components/ProjectDashBoard';
 import Contact from './components/Contact';
 import './styles/App.css';
 import './styles/DegreeDetails.css';
+import "./i18n";
+import { useTranslation } from "react-i18next";
 
 function App() {
   const [activeSection, setActiveSection] = useState('about');
   const [view, setView] = useState('portfolio');
+  const {i18n} = useTranslation();
+  const toggleTranslation = () =>{
+    i18n.changeLanguage(i18n.language == "pt" ? "en" : "pt");
+  }
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -41,7 +47,6 @@ function App() {
       <Header activeSection={activeSection} onNavigate={handleNavigate} />
       
       <main>
-        {/* Lógica de renderização condicional aninhada */}
 
         {}
         {view === 'degreeDetails' ? (

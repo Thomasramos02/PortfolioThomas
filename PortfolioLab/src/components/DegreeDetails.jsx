@@ -1,58 +1,53 @@
 import React from 'react';
-
-const coursesData = [
-  { name: 'Artificial Intelligence', hours: 95, modality: 'Hybrid', grade: 9.5, status: 'Passed' },
-  { name: 'Data Structures', hours: 80, modality: 'Hybrid', grade: 9.2, status: 'Passed' },
-  { name: 'Web Development', hours: 95, modality: 'Online', grade: 9.8, status: 'Passed' },
-  { name: 'Algorithms', hours: 80, modality: 'Hybrid', grade: 9.0, status: 'Passed' },
-];
-
-const SemesterCard = ({ semesterNumber }) => (
-  <div className="semester-card">
-    <h3>{semesterNumber}º Semestre</h3>
-    <table>
-      <thead>
-        <tr>
-          <th>Matéria</th>
-          <th>C.H.</th>
-          <th>Modalidade</th>
-          <th>Nota</th>
-          <th>Avaliação</th>
-        </tr>
-      </thead>
-      <tbody>
-        {coursesData.map((course, index) => (
-          <tr key={index}>
-            <td>{course.name}</td>
-            <td>{course.hours}h</td>
-            <td>{course.modality}</td>
-            <td>{course.grade.toFixed(1)}</td>
-            <td>{course.status}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-    <div className="semester-average">
-      Média: 9.4/10.0
-    </div>
-  </div>
-);
+import { useTranslation } from 'react-i18next';
 
 const DegreeDetails = ({ onBack }) => {
+  const { t } = useTranslation();
+
+  // Array de semestres
   const semesters = Array.from({ length: 8 }, (_, i) => i + 1);
+
+  // Pega os cursos do i18n
+  const coursesData = t('degreeDetails.courses', { returnObjects: true });
 
   return (
     <div className="degree-details-container">
-      
       <main className="degree-main-content">
         <div className="degree-intro">
-          <h2>VISÃO GERAL</h2>
-          <h1>Engenharia de Software</h1>
-          <p>Uma lista detalhada de todas as matérias e notas da graduação em Engenharia de Software na PUC Minas, mostrando meu progresso de aprendizado e experiência em vários domínios técnicos.</p>
+          <h2>{t('degreeDetails.overviewTitle')}</h2>
+          <h1>{t('degreeDetails.degreeName')}</h1>
+          <p>{t('degreeDetails.description')}</p>
         </div>
         <div className="semesters-grid">
           {semesters.map(semester => (
-            <SemesterCard key={semester} semesterNumber={semester} />
+            <div key={semester} className="semester-card">
+              <h3>{semester}º {t('degreeDetails.semester')}</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>{t('degreeDetails.course')}</th>
+                    <th>{t('degreeDetails.hours')}</th>
+                    <th>{t('degreeDetails.modality')}</th>
+                    <th>{t('degreeDetails.grade')}</th>
+                    <th>{t('degreeDetails.status')}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {coursesData.map((course, index) => (
+                    <tr key={index}>
+                      <td>{course.name}</td>
+                      <td>{course.hours}h</td>
+                      <td>{course.modality}</td>
+                      <td>{course.grade.toFixed(1)}</td>
+                      <td>{course.status}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+              <div className="semester-average">
+                {t('degreeDetails.average')}: 9.4/10.0
+              </div>
+            </div>
           ))}
         </div>
       </main>

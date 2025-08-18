@@ -1,0 +1,113 @@
+  {
+    "hero": {
+      "name": "Thomás Ramos Oliveira",
+      "title": "Software engineering student",
+      "description": "I’m a Software Engineering student at PUC Minas, seeking learning opportunities and practical experience. I have experience in JavaScript, React, Java, C, and web technologies such as Spring Boot, Vue.js, Bootstrap, HTML5, and CSS3",
+      "email": "thomasramosoliveira@gmail.com",
+      "phone": "+55 (37) 999756056",
+      "location": "Belo Horizonte, MG"
+    },
+    "header": {
+      "about": "About",
+      "projects": "Projects",
+      "education": "Education",
+      "contact": "Contact"
+    },
+    "footer": {
+      "resources": "Resources",
+      "legal": "Legal",
+      "contact": "Contact",
+      "rights": "All rights reserved."
+    },
+    "educationDashboard": {
+      "sectionTitle": "My Education & Certifications",
+      "degrees": [
+        {
+          "title": "Bachelor of Science in Software Engineering",
+          "institution": "Pontifical Catholic University of Minas Gerais - Feb 2024 - Dec 2027",
+        "details": "Currently in 4th semester – expected graduation Dec 2027",
+          "buttonText": "View Degree Details"
+
+        },
+        {
+          "title": "AWS Certified Solutions Architect – Associate",
+          "institution": "Amazon Web Services - Issued: Dec 2022"
+        }
+      ]
+    },
+    "projectsDashboard": {
+      "heroTitle": "My Creative Work",
+      "heroSubtitle": "A showcase of innovative solutions and passionate development across various domains.",
+      "featuredProjects": "Featured Projects",
+      "liveDemo": "Live Demo",
+      "sourceCode": "Source Code",
+      "projects": [
+        {
+          "image": "/images/aws.jpg",
+          "title": "AI-Powered Content Platform",
+          "description": "Developed a full-stack platform leveraging Generative AI for content creation and optimization. Implemented real-time collaboration features that integrated with various third-party APIs.",
+          "technologies": ["React", "Node.js", "MongoDB", "OpenAI API", "AWS"],
+          "date": "Mar 2020 - Present",
+          "liveDemoUrl": "#",
+          "sourceCodeUrl": "#"
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1522199755839-a2bacb67c546?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+          "title": "Cloud Infrastructure Optimization",
+          "description": "Designed and implemented scalable cloud infrastructure solutions. Optimized database queries, reducing response times by 35%.",
+          "technologies": ["AWS", "Terraform", "Kubernetes", "Python"],
+          "date": "Jan 2020 - Feb 2023",
+          "liveDemoUrl": "#",
+          "sourceCodeUrl": "#"
+        }
+      ]
+    },
+    "workExperience": [
+      {
+        "title": "AI-Powered Content Platform",
+        "info": "Tech Innovations Inc – Mar 2020 - Present",
+        "description": "Developed a full-stack platform leveraging Generative AI for content creation and optimization. Implemented real-time collaboration features integrated with various third-party APIs.",
+        "tags": ["React", "Node.js", "MongoDB", "OpenAI API", "AWS"],
+        "buttonText": "View Project"
+      },
+      {
+        "title": "Cloud Infrastructure Optimization",
+        "info": "Cloud Solutions LLC – Jan 2020 - Feb 2023",
+        "description": "Designed and implemented scalable cloud infrastructure solutions. Optimized database queries, reducing response times by 35%.",
+        "tags": ["AWS", "Terraform", "Kubernetes", "Python"],
+        "buttonText": "View Case Study"
+      }
+    ],
+    "degreeDetails": {
+      "overviewTitle": "OVERVIEW",
+      "degreeName": "Software Engineering",
+      "description": "A detailed list of all subjects and grades in the Software Engineering degree at PUC Minas, showing my learning progress and experience across various technical domains.",
+      "semester": "Semester",
+      "course": "Course",
+      "hours": "C.H.",
+      "modality": "Modality",
+      "grade": "Grade",
+      "status": "Status",
+      "average": "Average",
+      "courses": [
+        { "name": "Artificial Intelligence", "hours": 95, "modality": "Hybrid", "grade": 9.5, "status": "Passed" },
+        { "name": "Data Structures", "hours": 80, "modality": "Hybrid", "grade": 9.2, "status": "Passed" },
+        { "name": "Web Development", "hours": 95, "modality": "Online", "grade": 9.8, "status": "Passed" },
+        { "name": "Algorithms", "hours": 80, "modality": "Hybrid", "grade": 9.0, "status": "Passed" }
+      ]
+    },
+    "contactSection": {
+      "sectionTitle": "Contact Me",
+      "headerTitle": "Get in Touch for Opportunities",
+      "headerSubtitle": "My goal is to turn ideas into great results. Whether you are looking for a partnership, want to discuss a concept, or just share ideas, I’m here to chat!",
+      "emailLabel": "EMAIL",
+      "whatsappLabel": "WHATSAPP",
+      "locationLabel": "LOCATION",
+      "placeholderName": "Your full name",
+      "placeholderEmail": "your.email@example.com",
+      "placeholderSubject": "Subject",
+      "placeholderMessage": "Your message...",
+      "submitBtn": "Send Message"
+    }
+  }
+

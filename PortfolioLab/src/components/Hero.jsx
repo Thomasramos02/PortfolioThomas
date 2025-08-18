@@ -1,35 +1,36 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import { useTranslation } from "react-i18next";
 
 function Hero() {
+  const { t } = useTranslation();
+
   return (
     <section id="about" className="hero">
       <div className="hero-content">
-        <h1>Vinicius Gomes Rodrigues</h1>
-        <h2>Full-Stack Developer | AI & Cloud Enthusiast</h2>
-        <p>
-          I am a passionate and versatile Full Stack Developer with over 7 years of experience building robust and scalable web applications.
-          My expertise spans across front-end frameworks like React and Vue, back-end technologies such as Node.js and Python,
-          and database management including MongoDB and PostgreSQL.
-        </p>
+        <h1>{t("hero.name")}</h1>
+        <h2>{t("hero.title")}</h2>
+        <p>{t("hero.description")}</p>
+
         <div className="contact-info">
           <div className="contact-item">
             <FaEnvelope className="contact-icon" />
-            <span>viniciusgomes2202@gmail.com</span>
+            <span>{t("hero.email")}</span>
           </div>
           <div className="contact-item">
             <FaPhone className="contact-icon" />
-            <span>+55 (31) 9 8598-4390</span>
+            <span>{t("hero.phone")}</span>
           </div>
           <div className="contact-item">
             <FaMapMarkerAlt className="contact-icon" />
-            <span>Belo Horizonte, MG</span>
+            <span>{t("hero.location")}</span>
           </div>
+
           <div className="social-links">
-            <a href="https://www.linkedin.com/in/viniciusgomesrod/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/thomasramoss/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin className="social-icon" />
             </a>
-            <a href="https://github.com/viniciusgomesrod" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Thomasramos02" target="_blank" rel="noopener noreferrer">
               <FaGithub className="social-icon" />
             </a>
             <a href="" target="_blank" rel="noopener noreferrer">
