@@ -4,7 +4,7 @@
       "title": "Software engineering student",
       "description": "I’m a Software Engineering student at PUC Minas, seeking learning opportunities and practical experience. I have experience in JavaScript, React, Java, C, and web technologies such as Spring Boot, Vue.js, Bootstrap, HTML5, and CSS3",
       "email": "thomasramosoliveira@gmail.com",
-      "phone": "+55 (37) 999756056",
+      "phone": "+55 (37) 99975-6056",
       "location": "Belo Horizonte, MG"
     },
     "header": {
@@ -30,84 +30,112 @@
 
         },
         {
-          "title": "AWS Certified Solutions Architect – Associate",
-          "institution": "Amazon Web Services - Issued: Dec 2022"
+          "title": "Red Hat Certified",
+          "institution": "Red Hat Services - Issued: Feb 2025"
         }
       ]
     },
     "projectsDashboard": {
-      "heroTitle": "My Creative Work",
+      "heroTitle": "My Projects",
       "heroSubtitle": "A showcase of innovative solutions and passionate development across various domains.",
       "featuredProjects": "Featured Projects",
       "liveDemo": "Live Demo",
       "sourceCode": "Source Code",
       "projects": [
         {
-          "image": "/images/aws.jpg",
-          "title": "AI-Powered Content Platform",
-          "description": "Developed a full-stack platform leveraging Generative AI for content creation and optimization. Implemented real-time collaboration features that integrated with various third-party APIs.",
-          "technologies": ["React", "Node.js", "MongoDB", "OpenAI API", "AWS"],
-          "date": "Mar 2020 - Present",
-          "liveDemoUrl": "#",
-          "sourceCodeUrl": "#"
+          "image": "/images/TemQueSer.png",
+          "title": "TemQueSer",
+          "description": "A software designed for promoting events and interacting with your audience through content publications within the website",
+          "technologies": ["HTML5", "CSS3", "PostgreSQL", "Java", "SpringBoot","JavaScript"],
+          "date": "Feb 2025 - Present",
+          "liveDemoUrl": "https://front-end-tem-que-ser.vercel.app/",
+          "sourceCodeUrl": "https://github.com/Thomasramos02/pmg-es-2025-1-ti3-9545100-tem-que-ser"
         },
         {
-          "image": "https://images.unsplash.com/photo-1522199755839-a2bacb67c546?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-          "title": "Cloud Infrastructure Optimization",
-          "description": "Designed and implemented scalable cloud infrastructure solutions. Optimized database queries, reducing response times by 35%.",
-          "technologies": ["AWS", "Terraform", "Kubernetes", "Python"],
-          "date": "Jan 2020 - Feb 2023",
+          "image": "/images/AluSoft.png",
+          "title": "AluSoft",
+          "description": "Software focused on automating material management and creating proposals in the window and glass sector (civil construction)",
+          "technologies": ["HTML5", "CSS3", "PostgreSQL", "Java", "SpringBoot","JavaScript"],
+          "date": "Aug 2024 - Present",
           "liveDemoUrl": "#",
-          "sourceCodeUrl": "#"
+          "sourceCodeUrl": "https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-2-ti2-3687100-alusoft"
         }
       ]
     },
-    "workExperience": [
-      {
-        "title": "AI-Powered Content Platform",
-        "info": "Tech Innovations Inc – Mar 2020 - Present",
-        "description": "Developed a full-stack platform leveraging Generative AI for content creation and optimization. Implemented real-time collaboration features integrated with various third-party APIs.",
-        "tags": ["React", "Node.js", "MongoDB", "OpenAI API", "AWS"],
-        "buttonText": "View Project"
-      },
-      {
-        "title": "Cloud Infrastructure Optimization",
-        "info": "Cloud Solutions LLC – Jan 2020 - Feb 2023",
-        "description": "Designed and implemented scalable cloud infrastructure solutions. Optimized database queries, reducing response times by 35%.",
-        "tags": ["AWS", "Terraform", "Kubernetes", "Python"],
-        "buttonText": "View Case Study"
-      }
-    ],
-    "degreeDetails": {
-      "overviewTitle": "OVERVIEW",
-      "degreeName": "Software Engineering",
-      "description": "A detailed list of all subjects and grades in the Software Engineering degree at PUC Minas, showing my learning progress and experience across various technical domains.",
-      "semester": "Semester",
-      "course": "Course",
-      "hours": "C.H.",
-      "modality": "Modality",
-      "grade": "Grade",
-      "status": "Status",
-      "average": "Average",
-      "courses": [
-        { "name": "Artificial Intelligence", "hours": 95, "modality": "Hybrid", "grade": 9.5, "status": "Passed" },
-        { "name": "Data Structures", "hours": 80, "modality": "Hybrid", "grade": 9.2, "status": "Passed" },
-        { "name": "Web Development", "hours": 95, "modality": "Online", "grade": 9.8, "status": "Passed" },
-        { "name": "Algorithms", "hours": 80, "modality": "Hybrid", "grade": 9.0, "status": "Passed" }
-      ]
-    },
-    "contactSection": {
-      "sectionTitle": "Contact Me",
-      "headerTitle": "Get in Touch for Opportunities",
-      "headerSubtitle": "My goal is to turn ideas into great results. Whether you are looking for a partnership, want to discuss a concept, or just share ideas, I’m here to chat!",
-      "emailLabel": "EMAIL",
-      "whatsappLabel": "WHATSAPP",
-      "locationLabel": "LOCATION",
-      "placeholderName": "Your full name",
-      "placeholderEmail": "your.email@example.com",
-      "placeholderSubject": "Subject",
-      "placeholderMessage": "Your message...",
-      "submitBtn": "Send Message"
+  "workExperience": [
+    {
+      "title": "Freelancer",
+      "info": "Junior Full Stack Developer",
+      "description": "Development and maintenance of web applications using React and Java Spring Boot.",
+      "tags": ["React", "Java", "JavaScript", "SpringBoot", "HTML5", "CSS3"],
+      "buttonText": "View Details",
+      "buttonLink": "https://github.com/Thomasramos02"
     }
+  ],
+
+  "degreeDetails": {
+  "overviewTitle": "OVERVIEW",
+  "degreeName": "Software Engineering",
+  "description": "A detailed list of all subjects and grades in the Software Engineering degree at PUC Minas, showing my learning progress and experience across various technical domains.",
+  "semester": "Semester",
+  "course": "Course",
+  "hours": "C.H.",
+  "modality": "Modality",
+  "grade": "Grade",
+  "status": "Status",
+  "average": "Average",
+  "courses": [
+    { "name": "Algorithms and Data Structures I", "hours": 120, "modality": "Practical/Theoretical", "grade": null, "status": null, "semester": 1 },
+    { "name": "Calculus I", "hours": 80, "modality": "Theoretical", "grade": null, "status": null, "semester": 1 },
+    { "name": "Web Interface Development", "hours": 80, "modality": "Practical/Theoretical", "grade": null, "status": null, "semester": 1 },
+    { "name": "Software Engineering Fundamentals", "hours": 80, "modality": "Theoretical", "grade": null, "status": null, "semester": 1 },
+    { "name": "Introduction to Computing", "hours": 70, "modality": "Practical/Theoretical", "grade": null, "status": null, "semester": 1 },
+    { "name": "Interdisciplinary Work: Web Applications", "hours": 50, "modality": "Practical", "grade": null, "status": null, "semester": 1 },
+
+    { "name": "Computer Architecture", "hours": 40, "modality": "Theoretical", "grade": null, "status": null, "semester": 2 },
+    { "name": "Databases", "hours": 80, "modality": "Practical/Theoretical", "grade": null, "status": null, "semester": 2 },
+    { "name": "Calculus II", "hours": 80, "modality": "Theoretical", "grade": null, "status": null, "semester": 2 },
+    { "name": "Philosophy: Reason and Modernity", "hours": 40, "modality": "Theoretical", "grade": null, "status": null, "semester": 2 },
+    { "name": "Modular Programming Lab", "hours": 40, "modality": "Practical", "grade": null, "status": null, "semester": 2 },
+    { "name": "Business Process Modeling", "hours": 60, "modality": "Practical/Theoretical", "grade": null, "status": null, "semester": 2 },
+    { "name": "Modular Programming", "hours": 80, "modality": "Theoretical", "grade": null, "status": null, "semester": 2 },
+    { "name": "Interdisciplinary Work: Business Processes Applications", "hours": 50, "modality": "Practical", "grade": null, "status": null, "semester": 2 },
+
+    { "name": "Algorithms and Data Structures II", "hours": 120, "modality": "Practical/Theoretical", "grade": null, "status": null, "semester": 3 },
+    { "name": "Religious Culture: Religious Phenomenon", "hours": 40, "modality": "Theoretical", "grade": null, "status": null, "semester": 3 },
+    { "name": "Software Requirements Engineering", "hours": 80, "modality": "Theoretical", "grade": null, "status": null, "semester": 3 },
+    { "name": "Introduction to Computer Science Research", "hours": 40, "modality": "Theoretical", "grade": null, "status": null, "semester": 3 },
+    { "name": "Operating Systems", "hours": 80, "modality": "Theoretical", "grade": null, "status": null, "semester": 3 },
+    { "name": "Interdisciplinary Work: Real Scenarios Applications", "hours": 45, "modality": "Practical", "grade": null, "status": null, "semester": 3 },
+
+    { "name": "Human-Computer Interaction", "hours": 90, "modality": "Theoretical", "grade": null, "status": null, "semester": 4 },
+    { "name": "Software Development Lab", "hours": 40, "modality": "Practical", "grade": null, "status": null, "semester": 4 },
+    { "name": "Elective I", "hours": 80, "modality": "Theoretical", "grade": null, "status": null, "semester": 4 },
+    { "name": "Software Project", "hours": 80, "modality": "Theoretical", "grade": null, "status": null, "semester": 4 },
+    { "name": "Computer Networks", "hours": 80, "modality": "Theoretical", "grade": null, "status": null, "semester": 4 },
+    { "name": "Graph Theory and Computability", "hours": 120, "modality": "Practical/Theoretical", "grade": null, "status": null, "semester": 4 },
+    { "name": "Interdisciplinary Work: Sustainability Applications", "hours": 50, "modality": "Practical", "grade": null, "status": null, "semester": 4 }
+  ]
+},
+
+    "contactSection": {
+  "sectionTitle": "Get in Touch",
+  "headerTitle": "Available for Opportunities",
+  "headerSubtitle": "My goal is to transform ideas into efficient technological solutions. I am open to collaborations, project discussions, or knowledge exchange.",
+  "emailLabel": "EMAIL",
+  "whatsappLabel": "WHATSAPP",
+  "locationLabel": "LOCATION",
+  "nameLabel": "Name",
+  "subjectLabel": "Subject",
+  "messageLabel": "Message",
+  "placeholderName": "Your full name",
+  "placeholderEmail": "your.email@example.com",
+  "placeholderSubject": "What would you like to discuss?",
+  "placeholderMessage": "Write your message here...",
+  "submitBtn": "Send Message",
+  "formSentAlert": "Message sent successfully!",
+  "formErrorAlert": "Error sending message. Please try again."
+}
+
   }
 

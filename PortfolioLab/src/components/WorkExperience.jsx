@@ -1,9 +1,10 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import techIcons from '../techIcons';
 
 function WorkExperience() {
   const { t } = useTranslation();
-  const experiences = t('workExperience', { returnObjects: true }); 
+  const experiences = t('workExperience', { returnObjects: true });
 
   return (
     <section id="work" className="work-experience">
@@ -14,12 +15,22 @@ function WorkExperience() {
           <h3>{exp.title}</h3>
           <p className="project-info">{exp.info}</p>
           <p>{exp.description}</p>
+
           <div className="project-tags">
             {exp.tags.map(tag => (
-              <span key={tag} className="tag">{tag}</span>
+              <span key={tag}>
+                {techIcons[tag] ? techIcons[tag]() : null} {tag}
+              </span>
             ))}
           </div>
-          <button className="view-project-btn">{exp.buttonText}</button>
+
+          {/* Apenas adicionando o link ao botão */}
+          <button 
+            className="view-project-btn" 
+            onClick={() => window.open(exp.buttonLink, "_blank")}
+          >
+            {exp.buttonText}
+          </button>
         </div>
       ))}
     </section>

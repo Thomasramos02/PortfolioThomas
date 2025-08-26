@@ -1,52 +1,58 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import '../styles/ProjectDashboard.module.css';
+import styles from '../styles/ProjectDashboard.module.css';
+import techIcons from '../techIcons';
 
 const ProjectDashBoard = () => {
   const { t } = useTranslation();
   const projects = t("projectsDashboard.projects", { returnObjects: true });
 
   return (
-    <div className="dashboard-container">
-      <section className="creative-work-hero">
-        <div className="hero-content">
+    <div className={styles.dashboardContainer}>
+      <section className={styles.creativeWorkHero}>
+        <div className={styles.heroContent}>
           <h1>{t("projectsDashboard.heroTitle")}</h1>
-          <p className="hero-subtitle">{t("projectsDashboard.heroSubtitle")}</p>
+          <p className={styles.heroSubtitle}>{t("projectsDashboard.heroSubtitle")}</p>
         </div>
       </section>
 
-      <section className="projects-section">
-        <h2 className="section-title">{t("projectsDashboard.featuredProjects")}</h2>
-        <div className="projects-grid">
+      <section className={styles.projectsSection}>
+        <h2 className={styles.sectionTitle}>{t("projectsDashboard.featuredProjects")}</h2>
+        <div className={styles.projectsGrid}>
           {projects.map((project, index) => (
-            <div key={index} className="project-card">
-              <div className="project-media">
+            <div key={index} className={styles.projectCard}>
+              <div className={styles.projectMedia}>
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="project-image"
+                  className={styles.projectImage}
                   loading="lazy"
                 />
               </div>
-              <div className="project-content">
-                <div className="project-header">
+              <div className={styles.projectContent}>
+                <div className={styles.projectHeader}>
                   <h3>{project.title}</h3>
-                  <div className="project-meta">
-                    <span className="project-date">{project.date}</span>
+                  <div className={styles.projectMeta}>
+                    <span className={styles.projectDate}>{project.date}</span>
                   </div>
                 </div>
-                <p className="project-description">{project.description}</p>
-                <div className="project-footer">
-                  <div className="project-tags">
-                    {project.technologies?.map((tech, idx) => (
-                      <span key={idx} className="tag">{tech}</span>
-                    ))}
+                <p className={styles.projectDescription}>{project.description}</p>
+                <div className={styles.projectFooter}>
+                  <div className={styles.projectTags}>
+                    {project.technologies?.map((tech, idx) => {
+                      const IconComponent = techIcons[tech];
+                      return (
+                        <span key={idx} className={styles.tag}>
+                          {IconComponent && <IconComponent />} {tech}
+                        </span>
+                      );
+                    })}
                   </div>
-                  <div className="project-actions">
-                    <a href={project.liveDemoUrl} className="action-btn demo-btn" target="_blank" rel="noopener noreferrer">
+                  <div className={styles.projectActions}>
+                    <a href={project.liveDemoUrl} className={`${styles.actionBtn} ${styles.demoBtn}`} target="_blank" rel="noopener noreferrer">
                       {t("projectsDashboard.liveDemo")}
                     </a>
-                    <a href={project.sourceCodeUrl} className="action-btn code-btn" target="_blank" rel="noopener noreferrer">
+                    <a href={project.sourceCodeUrl} className={`${styles.actionBtn} ${styles.codeBtn}`} target="_blank" rel="noopener noreferrer">
                       {t("projectsDashboard.sourceCode")}
                     </a>
                   </div>

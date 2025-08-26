@@ -95,12 +95,12 @@ const Contact = () => {
           <ContactInfoItem 
             icon={<FaEnvelope />} 
             label={t('contactSection.emailLabel')} 
-            value="viniciusgomes2202@gmail.com" 
+            value="thomasramosoliveira@gmail.com" 
           />
           <ContactInfoItem 
             icon={<FaWhatsapp />} 
             label={t('contactSection.whatsappLabel')} 
-            value="+55 31 9 8598-4390" 
+            value="+55 37 99756056" 
           />
           <ContactInfoItem 
             icon={<FaMapMarkerAlt />} 
@@ -108,10 +108,10 @@ const Contact = () => {
             value="Belo Horizonte, MG - Brasil" 
           />
           <div className="social-links">
-            <a href="https://www.linkedin.com/in/viniciusgomesrod/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/thomasramoss/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <FaLinkedin />
             </a>
-            <a href="https://github.com/viniciusgomesrod" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <a href="https://github.com/Thomasramos02" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <FaGithub />
             </a>
           </div>
@@ -184,9 +184,9 @@ const Contact = () => {
               disabled={isSubmitting}
             >
               {isSubmitting ? (
-                t('contactSection.submittingBtn') || 'Enviando...'
+                 'Enviando...'
               ) : (
-                t('contactSection.submitBtn') || 'Enviar Mensagem'
+                'Enviar Mensagem'
               )}
             </button>
           </form>

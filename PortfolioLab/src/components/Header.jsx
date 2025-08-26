@@ -26,8 +26,18 @@ function Header({ activeSection, onNavigate }) {
 
   return (
     <header className="header">
-      <div className="logo">Thomás Ramos Oliveira</div>
-      
+      <div className="logo">
+        <img 
+          src="/images/Logo.jpg" 
+          alt="Logo Thomás Ramos Oliveira" 
+          style={{ 
+            height: "80px",    // tamanho da logo
+            width: "auto",     // mantém proporção
+            borderRadius: "12px", // borda arredondada
+            objectFit: "contain" 
+          }} 
+        />
+      </div>
       <nav>
         <ul>
           <NavLink section="about" activeSection={activeSection} onNavigate={onNavigate}>

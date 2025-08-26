@@ -40,7 +40,9 @@ function Hero() {
         </div>
       </div>
       <div className="hero-image">
-        <div className="profile-circle"></div>
+          <div className="profile-circle">
+            <img src="/images/fotoPerfil.jpeg" alt="Foto de perfil" />
+          </div>
       </div>
     </section>
   );

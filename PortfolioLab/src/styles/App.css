@@ -1,3 +1,4 @@
+ @import url("https://use.typekit.net/ayp4kni.css");
 :root {
   --primary-color: #ffffff;
   --background-color: #000000;
@@ -10,7 +11,7 @@
 body {
   background-color: var(--background-color);
   color: var(--primary-color);
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "orbitron", sans-serif;
   margin: 0;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -146,15 +147,24 @@ body {
 .hero-image {
   position: relative;
 }
-
 .profile-circle {
-  width: 280px;
+  width: 280px;       /* tamanho do círculo */
   height: 280px;
-  border-radius: 50%;
-  background: linear-gradient(145deg, var(--secondary-background-color), #2a2a2a);
+  border-radius: 50%; /* deixa redondo */
+  overflow: hidden;   /* corta a imagem no formato do círculo */
+  border: 2px solid var(--card-border); /* opcional: borda branca */
   box-shadow: 0 10px 30px rgba(0, 123, 255, 0.2);
-  border: 2px solid var(--card-border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.profile-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* garante que a foto preencha o círculo */
+}
+
 
 /* Work Experience Moderno */
 .work-experience {

@@ -1,8 +1,10 @@
+@import url("https://use.typekit.net/ayp4kni.css");
+
 .degree-details-container {
   background-color: #0D1117;
   color: #c9d1d9;
-  font-family: 'Inter', sans-serif;
-  padding: 2rem;
+  font-family: "orbitron", sans-serif;
+  padding: 1rem;
   animation: fadeIn 0.5s ease-in-out;
 }
 
@@ -11,34 +13,15 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
-.degree-header {
-  margin-bottom: 2rem;
-}
-
-.back-button {
-  background: transparent;
-  color: var(--accent-color, #007bff);
-  border: 1px solid var(--accent-color, #007bff);
-  padding: 0.6rem 1.2rem;
-  border-radius: 30px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.back-button:hover {
-  background: var(--accent-color, #007bff);
-  color: #ffffff;
-}
-
 .degree-main-content {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
 .degree-intro {
   text-align: center;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2.5rem;
+  padding: 0 1rem;
 }
 
 .degree-intro h2 {
@@ -47,17 +30,18 @@
   font-weight: 500;
   letter-spacing: 1.5px;
   text-transform: uppercase;
+  margin-bottom: 0.5rem;
 }
 
 .degree-intro h1 {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin: 0.5rem 0;
   color: #f0f6fc;
 }
 
 .degree-intro p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   max-width: 700px;
   margin: 1rem auto 0;
   line-height: 1.6;
@@ -66,66 +50,141 @@
 
 .semesters-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(530px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem;
 }
 
 .semester-card {
   background-color: #161b22;
   border: 1px solid #30363d;
   border-radius: 8px;
-  padding: 1.5rem;
+  padding: 1.2rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
 }
 
 .semester-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
 .semester-card h3 {
   color: #f0f6fc;
-  font-size: 1.25rem;
-  margin-top: 0;
-  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.5rem;
   border-bottom: 1px solid #30363d;
-  padding-bottom: 0.8rem;
+}
+
+/* Tabela responsiva */
+.semester-table-container {
+  overflow-x: auto;
+  margin-bottom: 1rem;
 }
 
 .semester-card table {
   width: 100%;
   border-collapse: collapse;
+  min-width: 530px; /* Largura mínima para a tabela */
 }
 
-.semester-card th, .semester-card td {
-  text-align: left;
-  padding: 0.8rem 0.5rem;
-  font-size: 0.9rem;
+.semester-card th, 
+.semester-card td {
+  padding: 0.5rem;
+  font-size: 0.85rem;
   border-bottom: 1px solid #21262d;
+  word-wrap: break-word;
 }
 
 .semester-card th {
   color: #8b949e;
   font-weight: 500;
+  white-space: nowrap;
 }
 
-.semester-card tbody tr:last-child td {
-  border-bottom: none;
+/* Colunas com larguras específicas */
+.semester-card td:nth-child(1) { /* Nome do curso */
+  width: 40%;
+  min-width: 120px;
+}
+
+.semester-card td:nth-child(2), /* Carga horária */
+.semester-card td:nth-child(3), /* Modalidade */
+.semester-card td:nth-child(4), /* Nota */
+.semester-card td:nth-child(5) { /* Status */
+  width: 15%;
+  min-width: 60px;
+  text-align: center;
+}
+
+.semester-card tbody tr:hover {
+  background-color: #1c2128;
 }
 
 .semester-average {
   text-align: right;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   font-size: 0.9rem;
   font-weight: 500;
   color: #8b949e;
+  padding-top: 0.5rem;
+  border-top: 1px solid #30363d;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 1200px) {
+  .semesters-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
 }
 
 @media (max-width: 768px) {
+  .degree-details-container {
+    padding: 0.5rem;
+  }
+  
   .semesters-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 0.5rem;
   }
+  
   .degree-intro h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
+  }
+  
+  .degree-intro p {
+    font-size: 0.9rem;
+  }
+  
+  .semester-card {
+    padding: 1rem;
+  }
+  
+  .semester-card table {
+    min-width: 450px;
+  }
+  
+  .semester-card th, 
+  .semester-card td {
+    padding: 0.4rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .semester-card table {
+    min-width: 380px;
+  }
+  
+  .semester-card th, 
+  .semester-card td {
+    padding: 0.3rem;
+    font-size: 0.75rem;
+  }
+  
+  .semester-card h3 {
+    font-size: 1rem;
   }
 }

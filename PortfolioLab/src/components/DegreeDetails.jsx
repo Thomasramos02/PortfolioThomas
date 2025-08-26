@@ -19,36 +19,40 @@ const DegreeDetails = ({ onBack }) => {
           <p>{t('degreeDetails.description')}</p>
         </div>
         <div className="semesters-grid">
-          {semesters.map(semester => (
-            <div key={semester} className="semester-card">
-              <h3>{semester}º {t('degreeDetails.semester')}</h3>
-              <table>
-                <thead>
-                  <tr>
-                    <th>{t('degreeDetails.course')}</th>
-                    <th>{t('degreeDetails.hours')}</th>
-                    <th>{t('degreeDetails.modality')}</th>
-                    <th>{t('degreeDetails.grade')}</th>
-                    <th>{t('degreeDetails.status')}</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {coursesData.map((course, index) => (
-                    <tr key={index}>
-                      <td>{course.name}</td>
-                      <td>{course.hours}h</td>
-                      <td>{course.modality}</td>
-                      <td>{course.grade.toFixed(1)}</td>
-                      <td>{course.status}</td>
+          {semesters.map(semester => {
+            const semesterCourses = coursesData.filter(course => course.semester === semester);
+
+            return (
+              <div key={semester} className="semester-card">
+                <h3>{semester}º {t('degreeDetails.semester')}</h3>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>{t('degreeDetails.course')}</th>
+                      <th>{t('degreeDetails.hours')}</th>
+                      <th>{t('degreeDetails.modality')}</th>
+                      <th>{t('degreeDetails.grade')}</th>
+                      <th>{t('degreeDetails.status')}</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
-              <div className="semester-average">
-                {t('degreeDetails.average')}: 9.4/10.0
+                  </thead>
+                  <tbody>
+                    {semesterCourses.map((course, index) => (
+                      <tr key={index}>
+                        <td>{course.name}</td>
+                        <td>{course.hours}h</td>
+                        <td>{course.modality}</td>
+                        <td>{course.grade !== null ? course.grade.toFixed(1) : "-"}</td>
+                        <td>{course.status || "-"}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+                <div className="semester-average">
+                  {t('degreeDetails.average')}: 9.4/10.0
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </main>
     </div>

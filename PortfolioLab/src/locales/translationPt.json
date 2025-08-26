@@ -29,10 +29,9 @@
         "buttonText": "Ver Detalhes do Curso"
       },
       {
-        "title": "AWS Certified Solutions Architect – Associate",
-        "institution": "Amazon Web Services - Emitido: Dez 2022",
-        "buttonText": "Ver Certificado"
-      }
+          "title": "Red Hat Certified",
+          "institution": "Red Hat Services - Issued: Feb 2025"
+        }
     ]
   },
   "projectsDashboard": {
@@ -43,51 +42,81 @@
     "sourceCode": "Código Fonte",
     "projects": [
       {
-        "image": "/images/projeto1.jpg",
-        "title": "Plataforma Educacional",
-        "description": "Desenvolvimento de uma plataforma educacional com recursos interativos para aprendizagem online.",
-        "technologies": ["React", "Node.js", "MongoDB"],
-        "date": "Jan 2023 - Jun 2023",
-        "liveDemoUrl": "#",
-        "sourceCodeUrl": "#"
+        "image": "/images/TemQueSer.png",
+        "title": "TemQueSer",
+        "description": "Um software voltado para divulgação de eventos e interação com seu publico por meio de publicações de conteudos dentro do site",
+        "technologies": ["HTML5", "CSS3", "PostgreSQL", "Java", "SpringBoot","JavaScript"],
+        "date": "Feb 2025 - Presente",
+        "liveDemoUrl": "https://front-end-tem-que-ser.vercel.app/",
+        "sourceCodeUrl": "https://github.com/Thomasramos02/pmg-es-2025-1-ti3-9545100-tem-que-ser"
       },
       {
-        "image": "/images/projeto2.jpg",
-        "title": "Sistema de Gerenciamento",
-        "description": "Criação de sistema de gerenciamento de tarefas com integração a serviços em nuvem.",
-        "technologies": ["Vue.js", "Spring Boot", "AWS"],
-        "date": "Jul 2023 - Presente",
+        "image": "/images/AluSoft.png",
+        "title": "AluSoft",
+        "description": "Um Software voltado para automação de gestão de materiais, criação de propostas no setor de esquadrias e vidros (construção civil)",
+        "technologies": ["HTML5", "CSS3", "PostgreSQL", "Java", "SpringBoot","JavaScript"],
+        "date": "Aug 2024 - Presente",
         "liveDemoUrl": "#",
-        "sourceCodeUrl": "#"
+        "sourceCodeUrl": "https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-2-ti2-3687100-alusoft"
       }
     ]
   },
   "workExperience": [
-    {
-      "title": "Estagiário em Desenvolvimento",
-      "info": "Empresa Tech - Mar 2023 - Presente",
-      "description": "Desenvolvimento e manutenção de aplicações web utilizando React e Node.js.",
-      "tags": ["React", "Node.js", "JavaScript"],
-      "buttonText": "Ver Detalhes"
-    }
-  ],
+  {
+    "title": "Freelancer",
+    "info": "Desenvolvedor Full Stack Júnior",
+    "description": "Desenvolvimento e manutenção de aplicações web utilizando React e Java Spring Boot.",
+    "tags": ["React", "Java", "JavaScript", "SpringBoot", "HTML5", "CSS3"],
+    "buttonText": "Ver Detalhes",
+    "buttonLink": "https://github.com/Thomasramos02"
+  }
+],
   "degreeDetails": {
-    "overviewTitle": "VISÃO GERAL",
-    "degreeName": "Engenharia de Software",
-    "description": "Lista detalhada de todas as disciplinas e notas do curso de Engenharia de Software na PUC Minas, mostrando meu progresso de aprendizado em diversas áreas técnicas.",
-    "semester": "Período",
-    "course": "Disciplina",
-    "hours": "C.H.",
-    "modality": "Modalidade",
-    "grade": "Nota",
-    "status": "Status",
-    "average": "Média",
-    "courses": [
-      { "name": "Algoritmos e Estruturas de Dados", "hours": 80, "modality": "Presencial", "grade": 9.2, "status": "Aprovado" },
-      { "name": "Programação Web", "hours": 60, "modality": "Híbrido", "grade": 8.8, "status": "Aprovado" },
-      { "name": "Banco de Dados", "hours": 60, "modality": "Presencial", "grade": 9.0, "status": "Aprovado" }
-    ]
-  },
+  "overviewTitle": "VISÃO GERAL",
+  "degreeName": "Engenharia de Software",
+  "description": "Lista detalhada de todas as disciplinas e notas do curso de Engenharia de Software na PUC Minas, mostrando meu progresso de aprendizado em diversas áreas técnicas.",
+  "semester": "Período",
+  "course": "Disciplina",
+  "hours": "C.H.",
+  "modality": "Modalidade",
+  "grade": "Nota",
+  "status": "Status",
+  "average": "Média",
+  "courses": [
+  { "name": "Algoritmos e Estruturas de Dados I", "hours": 120, "modality": "Prática/Teórica", "grade": null, "status": null, "semester": 1 },
+  { "name": "Cálculo I", "hours": 80, "modality": "Teórica", "grade": null, "status": null, "semester": 1 },
+  { "name": "Desenvolvimento de Interfaces Web", "hours": 80, "modality": "Prática/Teórica", "grade": null, "status": null, "semester": 1 },
+  { "name": "Fundamentos de Engenharia de Software", "hours": 80, "modality": "Teórica", "grade": null, "status": null, "semester": 1 },
+  { "name": "Introdução à Computação", "hours": 70, "modality": "Prática/Teórica", "grade": null, "status": null, "semester": 1 },
+  { "name": "Trabalho Interdisciplinar: Aplicações Web", "hours": 50, "modality": "Prática", "grade": null, "status": null, "semester": 1 },
+
+  { "name": "Arquitetura de Computadores", "hours": 40, "modality": "Teórica", "grade": null, "status": null, "semester": 2 },
+  { "name": "Bancos de Dados", "hours": 80, "modality": "Prática/Teórica", "grade": null, "status": null, "semester": 2 },
+  { "name": "Cálculo II", "hours": 80, "modality": "Teórica", "grade": null, "status": null, "semester": 2 },
+  { "name": "Filosofia: Razão e Modernidade", "hours": 40, "modality": "Teórica", "grade": null, "status": null, "semester": 2 },
+  { "name": "Laboratório de Programação Modular", "hours": 40, "modality": "Prática", "grade": null, "status": null, "semester": 2 },
+  { "name": "Modelagem de Processos de Negócios", "hours": 60, "modality": "Prática/Teórica", "grade": null, "status": null, "semester": 2 },
+  { "name": "Programação Modular", "hours": 80, "modality": "Teórica", "grade": null, "status": null, "semester": 2 },
+  { "name": "Trabalho Interdisciplinar: Aplicações para Processos de Negócios", "hours": 50, "modality": "Prática", "grade": null, "status": null, "semester": 2 },
+
+  { "name": "Algoritmos e Estruturas de Dados II", "hours": 120, "modality": "Prática/Teórica", "grade": null, "status": null, "semester": 3 },
+  { "name": "Cultura Religiosa: Fenômeno Religioso", "hours": 40, "modality": "Teórica", "grade": null, "status": null, "semester": 3 },
+  { "name": "Engenharia de Requisitos de Software", "hours": 80, "modality": "Teórica", "grade": null, "status": null, "semester": 3 },
+  { "name": "Introdução à Pesquisa em Informática", "hours": 40, "modality": "Teórica", "grade": null, "status": null, "semester": 3 },
+  { "name": "Sistemas Operacionais", "hours": 80, "modality": "Teórica", "grade": null, "status": null, "semester": 3 },
+  { "name": "Trabalho Interdisciplinar: Aplicações para Cenários Reais", "hours": 45, "modality": "Prática", "grade": null, "status": null, "semester": 3 },
+
+  { "name": "Interação Humano-Computador", "hours": 90, "modality": "Teórica", "grade": null, "status": null, "semester": 4 },
+  { "name": "Laboratório de Desenvolvimento de Software", "hours": 40, "modality": "Prática", "grade": null, "status": null, "semester": 4 },
+  { "name": "Optativa I", "hours": 80, "modality": "Teórica", "grade": null, "status": null, "semester": 4 },
+  { "name": "Projeto de Software", "hours": 80, "modality": "Teórica", "grade": null, "status": null, "semester": 4 },
+  { "name": "Redes de Computadores", "hours": 80, "modality": "Teórica", "grade": null, "status": null, "semester": 4 },
+  { "name": "Teoria dos Grafos e Computabilidade", "hours": 120, "modality": "Prática/Teórica", "grade": null, "status": null, "semester": 4 },
+  { "name": "Trabalho Interdisciplinar: Aplicações para Sustentabilidade", "hours": 50, "modality": "Prática", "grade": null, "status": null, "semester": 4 }
+]
+
+},
+
   "contactSection": {
     "sectionTitle": "Entre em Contato",
     "headerTitle": "Disponível para Oportunidades",
