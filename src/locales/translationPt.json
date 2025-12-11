@@ -1,0 +1,112 @@
+{
+  "hero": {
+    "name": "Thomás Ramos",
+    "title": "Estudante de Engenharia de Software",
+    "description": "Sou estudante de Engenharia de Software na PUC Minas, buscando oportunidades de aprendizado e experiência prática. Tenho conhecimento em JavaScript, React, Java, C e tecnologias web como Spring Boot, Node.js, Vue.js, Bootstrap, HTML5 e CSS3.",
+    "email": "thomasramosoliveira@gmail.com",
+    "phone": "+55 (37) 99975-6056",
+    "location": "Belo Horizonte, MG"
+  },
+  "header": {
+    "about": "Sobre",
+    "projects": "Projetos",
+    "books": "Livros",
+    "contact": "Contato"
+  },
+  "footer": {
+    "resources": "Recursos",
+    "legal": "Legal",
+    "contact": "Contato",
+    "rights": "Todos os direitos reservados."
+  },
+  "educationDashboard": {
+    "sectionTitle": "Minha Formação & Certificações",
+    "degrees": [
+      {
+        "title": "Bacharelado em Engenharia de Software",
+        "institution": "Pontifícia Universidade Católica de Minas Gerais - Fev 2024 - Dez 2027",
+        "details": "Atualmente no 4º período - previsão de conclusão Dez 2027",
+        "buttonText": "Ver Detalhes do Curso"
+      },
+      {
+          "title": "Red Hat Certified",
+          "institution": "Red Hat Services - Issued: Feb 2025"
+        }
+    ]
+  },
+  "projectsDashboard": {
+    "heroTitle": "Meus Projetos",
+    "heroSubtitle": "Alguns dos projetos que refletem minha evolução como desenvolvedor.",
+    "featuredProjects": "Projetos em Destaque",
+    "liveDemo": "Demo",
+    "sourceCode": "Código Fonte",
+    "projects": [
+      {
+        "image": "/images/TemQueSer.png",
+        "title": "TemQueSer",
+        "description": "Um software voltado para divulgação de eventos e interação com seu publico por meio de publicações de conteudos dentro do site",
+        "technologies": ["HTML5", "CSS3", "PostgreSQL", "Java", "SpringBoot","JavaScript"],
+        "date": "Feb 2025 - Presente",
+        "liveDemoUrl": "https://front-end-tem-que-ser.vercel.app/",
+        "sourceCodeUrl": "https://github.com/Thomasramos02/pmg-es-2025-1-ti3-9545100-tem-que-ser"
+      },
+      {
+        "image": "/images/AluSoft.png",
+        "title": "AluSoft",
+        "description": "Um Software voltado para automação de gestão de materiais, criação de propostas no setor de esquadrias e vidros (construção civil)",
+        "technologies": ["HTML5", "CSS3", "PostgreSQL", "Java", "SpringBoot","JavaScript"],
+        "date": "Aug 2024 - Presente",
+        "liveDemoUrl": "#",
+        "sourceCodeUrl": "https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-2-ti2-3687100-alusoft"
+      }
+    ]
+  },
+  "workExperience": [
+  {
+    "title": "Freelancer",
+    "info": "Desenvolvedor Full Stack Júnior",
+    "description": "Desenvolvimento e manutenção de aplicações web utilizando React e Java Spring Boot.",
+    "tags": ["React", "Java", "JavaScript", "SpringBoot", "HTML5", "CSS3"],
+    "buttonText": "Ver Detalhes",
+    "buttonLink": "https://github.com/Thomasramos02"
+  }
+],
+ "books": {
+  "title": "Livros",
+  "list": [
+    {
+      "cover": "/images/AprendendoAlgoritmos.jpg",
+      "title": "Aprendendo Algoritmos",
+      "author": "Aditya Bhargava",
+      "description": "Um guia ilustrado para entender algoritmos de forma simples e prática.",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Aprendendo+Algoritmos+Aditya+Bhargava"
+    },
+    {
+      "cover": "/images/ultra-aprendizado.jpg",
+      "title": "Ultra Learning",
+      "author": "Scott Young",
+      "description": "Um guia para autoaprendizado agressivo e domínio rápido de habilidades difíceis.",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Ultra+Learning+Scott+Young"
+    }
+  ]
+}
+,
+  "contactSection": {
+    "sectionTitle": "Entre em Contato",
+    "headerTitle": "Disponível para Oportunidades",
+    "headerSubtitle": "Meu objetivo é transformar ideias em soluções tecnológicas eficientes. Estou aberto para colaborações, discussões de projetos ou troca de conhecimentos.",
+    "emailLabel": "E-MAIL",
+    "whatsappLabel": "WHATSAPP",
+    "locationLabel": "LOCALIZAÇÃO",
+    "nameLabel": "Nome",
+    "subjectLabel": "Assunto",
+    "messageLabel": "Mensagem",
+    "placeholderName": "Seu nome completo",
+    "placeholderEmail": "seu.email@exemplo.com",
+    "placeholderSubject": "Sobre o que deseja conversar?",
+    "placeholderMessage": "Escreva sua mensagem aqui...",
+    "submitBtn": "Enviar Mensagem",
+    "formSentAlert": "Mensagem enviada com sucesso!",
+    "formErrorAlert": "Erro ao enviar mensagem. Por favor, tente novamente."
+  }
+}

@@ -1,0 +1,165 @@
+:root {
+  --bg-color: #0f172a;
+  --card-bg: #1e293b;
+  --text-primary: #ffffff;
+  --text-secondary: #94a3b8;
+  --text-color: #cccccc;
+  --accent-color: oklch(60.6% 0.25 292.717);
+  --border-color: #334155;
+  --tag-bg: rgba(96, 165, 250, 0.1);
+}
+
+/* Container */
+.dashboardContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Hero */
+.creativeWorkHero {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.heroContent h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #f8fafc, var(--accent-color), #f8fafc);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 1rem;
+}
+
+.heroSubtitle {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+}
+
+/* Seção de Projetos */
+.projectsSection {
+  margin-top: 3rem;
+}
+
+.sectionTitle {
+  color: var(--text-primary);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* === Novo estilo dos cards === */
+.projectsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Card */
+.projectCard {
+  display: flex;
+  background: var(--card-bg);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-5px);
+}
+
+/* Imagem lateral */
+.projectImageContainer {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  min-height: 280px;
+}
+
+/* Conteúdo */
+.projectDetails {
+  flex: 1.2;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projectTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.projectAccent {
+  color: var(--accent-color);
+}
+
+.projectDescription {
+  color: var(--text-color);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+/* Tags */
+.projectTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tag {
+  background: #eef2ff;
+  color: #3730a3;
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* Botões */
+.projectButtons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.actionBtn {
+  padding: 0.6rem 1.25rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.demoBtn {
+  background: var(--accent-color);
+  color: white;
+}
+
+.demoBtn:hover {
+  opacity: 0.9;
+}
+
+.codeBtn {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+.codeBtn:hover {
+  background: rgba(96, 165, 250, 0.1);
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .projectCard {
+    flex-direction: column;
+  }
+  .projectImageContainer {
+    height: 220px;
+  }
+}

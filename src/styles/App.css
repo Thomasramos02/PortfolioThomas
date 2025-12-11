@@ -1,0 +1,549 @@
+ @import url("https://use.typekit.net/ayp4kni.css");
+ @import "tailwindcss";
+:root {
+  --primary-color: #ffffff;
+  --background-color: #000000;
+  --secondary-background-color: #1a1a1a;
+  --accent-color: oklch(60.6% 0.25 292.717);
+  --text-color: #cccccc;
+  --card-border: oklch(70.2% 0.183 293.541)
+  --header-a-color: oklch(70.2% 0.183 293.541)
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  font-family: "orbitron", sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.portfolio {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Header Moderno */
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.8rem 0 1.5rem;
+  padding-left: 25px;
+  position: relative;
+  margin: 0;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+  opacity: 0.3;
+}
+
+.header .logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.header nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.header nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.05rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.header nav a:hover {
+  color: oklch(70.2% 0.183 293.541);
+}
+.header .logo{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.05rem;
+  padding-right: 15px;
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+.header nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent-color);
+  transition: width 0.3s ease;
+}
+
+.header nav a:hover::after {
+  width: 100%;
+}
+/* Mantém Thomás com a cor normal herdada */
+.header .logo .Dev {
+  color: var(--text-color);
+}
+
+/* Deixa apenas o "Dev" colorido */
+.header .logo .Dev .colorido {
+  background: linear-gradient(var(--accent-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Hero Section Moderna */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 4rem;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.hero-content h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, var(--primary-color),oklch(60.6% 0.25 292.717));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-content h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--accent-color);
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.hero-content p {
+  font-size: 1.15rem;
+  color: var(--text-color);
+  max-width: 700px;
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.contact-info p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-info p::before {
+  content: '•';
+  color: var(--accent-color);
+}
+
+.hero-image {
+  position: relative;
+}
+.profile-circle {
+  width: 280px;       /* tamanho do círculo */
+  height: 280px;
+  border-radius: 50%; /* deixa redondo */
+  overflow: hidden;   /* corta a imagem no formato do círculo */
+  border: 2px solid var(--card-border); /* opcional: borda branca */
+  box-shadow: 0 10px 30px oklch(70.2% 0.183 293.541);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* garante que a foto preencha o círculo */
+}
+
+
+/* Work Experience Moderno */
+.work-experience {
+  padding: 3rem 0;
+  border-top: 1px solid var(--card-border);
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-color), transparent);
+}
+
+
+.project-card {
+  background: linear-gradient(145deg, var(--secondary-background-color), #222222);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 2.5rem;
+  margin-bottom: 2.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 123, 255, 0.1);
+}
+
+.project-card h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.project-info {
+  font-size: 1rem;
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  background: rgba(0, 123, 255, 0.1);
+  border-radius: 20px;
+}
+
+.project-card p {
+  color: var(--text-color);
+  margin-bottom: 1.8rem;
+  line-height: 1.7;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 2rem 0;
+}
+
+.tag {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--primary-color);
+  align-items: center;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid var(--card-border);
+  transition: all 0.3s ease;
+}
+.tag svg {
+  display: inline-block;
+  width: 28px;
+  height: 26px;
+
+}
+.tag:hover {
+  background: var(--accent-color);
+  color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+.view-project-btn {
+  background: transparent;
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.view-project-btn:hover {
+  background: var(--accent-color);
+  color: var(--primary-color);
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+/* Education Moderno */
+.education-certifications {
+  padding: 5rem 0;
+  border-top: 1px solid var(--card-border);
+}
+
+.education-card {
+  background: linear-gradient(145deg, var(--secondary-background-color), #222222);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-3px);
+}
+
+.education-card h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.education-card p {
+  color: var(--text-color);
+  font-size: 0.95rem;
+}
+
+/* Footer Moderno */
+.footer {
+  text-align: center;
+  padding: 3rem 0;
+  margin-top: 5rem;
+  border-top: 1px solid var(--card-border);
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.footer-links a:hover {
+  color: var(--primary-color);
+}
+
+.footer-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--accent-color);
+  transition: width 0.3s ease;
+}
+
+.footer-links a:hover::after {
+  width: 100%;
+}
+
+.made-with {
+  color: var(--text-color);
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* Efeitos Globais */
+::selection {
+  background: var(--accent-color);
+  color: var(--primary-color);
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .hero-image {
+    order: -1;
+    margin: 0 auto;
+  }
+  
+  .contact-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .header nav ul {
+    gap: 1.5rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .project-card, .education-card {
+    padding: 1.8rem;
+  }
+}
+
+/* ... (mantenha o CSS anterior) ... */
+
+/* Contact Info Moderno */
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+  margin-top: 2.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 0.95rem;
+  color: var(--text-color);
+}
+
+.contact-icon {
+  color: var(--accent-color);
+  font-size: 1.1rem;
+  min-width: 20px;
+}
+
+.social-links {
+  grid-column: span 2;
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.social-icon {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+  color: var(--accent-color);
+  transform: translateY(-3px);
+}
+
+/* Footer Modernizado */
+.footer {
+  padding: 3rem 0 2rem;
+  margin-top: 5rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--primary-color);
+}
+
+.footer-social {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.copyright {
+  color: var(--text-color);
+  font-size: 0.85rem;
+  opacity: 0.7;
+  margin-top: 1rem;
+}
+
+/* Education Details */
+.education-detail {
+  color: var(--text-color);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/* Responsividade para contatos */
+@media (max-width: 768px) {
+  .contact-info {
+    grid-template-columns: 1fr;
+  }
+  
+  .social-links {
+    grid-column: span 1;
+    justify-content: center;
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}

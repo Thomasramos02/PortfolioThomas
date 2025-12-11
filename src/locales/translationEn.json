@@ -1,0 +1,116 @@
+{
+    "hero": {
+      "name": "Thomás Ramos",
+      "title": "Software engineering student",
+      "description": "I’m a Software Engineering student at PUC Minas, seeking learning opportunities and practical experience. I have experience in JavaScript, React, Java, C, and web technologies such as Spring Boot, Node.js, Vue.js, Bootstrap, HTML5, and CSS3",
+      "email": "thomasramosoliveira@gmail.com",
+      "phone": "+55 (37) 99975-6056",
+      "location": "Belo Horizonte, MG"
+    },
+    "header": {
+      "about": "About",
+      "projects": "Projects",
+      "books": "Books",
+      "contact": "Contact"
+    },
+    "footer": {
+      "resources": "Resources",
+      "legal": "Legal",
+      "contact": "Contact",
+      "rights": "All rights reserved."
+    },
+    "educationDashboard": {
+      "sectionTitle": "My Education & Certifications",
+      "degrees": [
+        {
+          "title": "Bachelor of Science in Software Engineering",
+          "institution": "Pontifical Catholic University of Minas Gerais - Feb 2024 - Dec 2027",
+        "details": "Currently in 4th semester – expected graduation Dec 2027",
+          "buttonText": "View Degree Details"
+
+        },
+        {
+          "title": "Red Hat Certified",
+          "institution": "Red Hat Services - Issued: Feb 2025"
+        }
+      ]
+    },
+    "projectsDashboard": {
+      "heroTitle": "My Projects",
+      "heroSubtitle": "A showcase of innovative solutions and passionate development across various domains.",
+      "featuredProjects": "Featured Projects",
+      "liveDemo": "Live Demo",
+      "sourceCode": "Source Code",
+      "projects": [
+        {
+          "image": "/images/TemQueSer.png",
+          "title": "TemQueSer",
+          "description": "A software designed for promoting events and interacting with your audience through content publications within the website",
+          "technologies": ["HTML5", "CSS3", "PostgreSQL", "Java", "SpringBoot","JavaScript"],
+          "date": "Feb 2025 - Present",
+          "liveDemoUrl": "https://front-end-tem-que-ser.vercel.app/",
+          "sourceCodeUrl": "https://github.com/Thomasramos02/pmg-es-2025-1-ti3-9545100-tem-que-ser"
+        },
+        {
+          "image": "/images/AluSoft.png",
+          "title": "AluSoft",
+          "description": "Software focused on automating material management and creating proposals in the window and glass sector (civil construction)",
+          "technologies": ["HTML5", "CSS3", "PostgreSQL", "Java", "SpringBoot","JavaScript"],
+          "date": "Aug 2024 - Present",
+          "liveDemoUrl": "#",
+          "sourceCodeUrl": "https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-2-ti2-3687100-alusoft"
+        }
+      ]
+    },
+  "workExperience": [
+    {
+      "title": "Freelancer",
+      "info": "Junior Full Stack Developer",
+      "description": "Development and maintenance of web applications using React and Java Spring Boot.",
+      "tags": ["React", "Java", "JavaScript", "SpringBoot", "HTML5", "CSS3"],
+      "buttonText": "View Details",
+      "buttonLink": "https://github.com/Thomasramos02"
+    }
+  ],
+
+ "books": {
+  "title": "Books",
+  "list": [
+    {
+      "cover": "/images/AprendendoAlgoritmos.jpg",
+      "title": "Aprendendo Algoritmos",
+      "author": "Aditya Bhargava",
+      "description": "An illustrated guide to understanding algorithms in a simple and practical way.",
+      "amazonUrl": "https://www.amazon.com/s?k=Aprendendo+Algoritmos+Aditya+Bhargava"
+    },
+    {
+      "cover": "/images/ultra-aprendizado.jpg",
+      "title": "Ultra Learning",
+      "author": "Scott Young",
+      "description": "A guide to aggressive self-learning and mastering hard skills quickly.",
+      "amazonUrl": "https://www.amazon.com/s?k=Ultra+Learning+Scott+Young"
+    }
+  ]
+},
+
+    "contactSection": {
+  "sectionTitle": "Get in Touch",
+  "headerTitle": "Available for Opportunities",
+  "headerSubtitle": "My goal is to transform ideas into efficient technological solutions. I am open to collaborations, project discussions, or knowledge exchange.",
+  "emailLabel": "EMAIL",
+  "whatsappLabel": "WHATSAPP",
+  "locationLabel": "LOCATION",
+  "nameLabel": "Name",
+  "subjectLabel": "Subject",
+  "messageLabel": "Message",
+  "placeholderName": "Your full name",
+  "placeholderEmail": "your.email@example.com",
+  "placeholderSubject": "What would you like to discuss?",
+  "placeholderMessage": "Write your message here...",
+  "submitBtn": "Send Message",
+  "formSentAlert": "Message sent successfully!",
+  "formErrorAlert": "Error sending message. Please try again."
+}
+
+  }
+

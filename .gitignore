@@ -1,0 +1,12 @@
+.vscode/
+node_modules/
+dist/
+npm-debug.log
+.DS_Store
+/.idea/
+/.cache/
+/.parcel-cache/
+coverage/
+env.local
+.env
+node_modules/.cache/
