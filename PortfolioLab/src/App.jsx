@@ -1,18 +1,16 @@
-import React, { useState, useEffect } from 'react'; 
+import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
-import WorkExperience from './components/WorkExperience';
-import Education from './components/Education';
-import DegreeDetails from './components/DegreeDetails';
+import WorkExperience from './components/WorkExperience';   
 import ProjectDashboard from './components/ProjectDashBoard';
+import Books from './components/BookSection';
 import Contact from './components/Contact';
 import './styles/App.css';
-import './styles/DegreeDetails.css';
 import "./i18n";
 import { useTranslation } from "react-i18next";
 
-function App() {
+function App() {  
   const [activeSection, setActiveSection] = useState('about');
   const [view, setView] = useState('portfolio');
   const { i18n } = useTranslation();
@@ -27,8 +25,9 @@ function App() {
 
   const handleNavigate = (section) => {
     setActiveSection(section);
-    if (section === 'education') {
-      setView('degreeDetails');
+
+    if (section === 'books') {
+      setView('books');
     } else if (section === 'contact') {
       setView('contact');
     } else {
@@ -36,20 +35,14 @@ function App() {
     }
   };
 
-  const handleBackToPortfolio = () => {
-    setActiveSection('about');
-    setView('portfolio');
-  };
-
   return (
     <>
-      
       <Header activeSection={activeSection} onNavigate={handleNavigate} />
 
       <div className="portfolio">
         <main>
-          {view === 'degreeDetails' ? (
-            <DegreeDetails />
+          {view === 'books' ? (
+            <Books />
           ) : view === 'contact' ? (
             <Contact />
           ) : (
@@ -60,12 +53,6 @@ function App() {
                 <>
                   <Hero />
                   <WorkExperience />
-                  <Education
-                    onNavigateToDegreeDetails={() => {
-                      setActiveSection('education');
-                      setView('degreeDetails');
-                    }}
-                  />
                 </>
               )}
             </>

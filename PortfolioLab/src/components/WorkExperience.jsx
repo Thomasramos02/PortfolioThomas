@@ -18,7 +18,7 @@ function WorkExperience() {
 
           <div className="project-tags">
             {exp.tags.map(tag => (
-              <span key={tag}>
+              <span key={tag} className="tag">
                 {techIcons[tag] ? techIcons[tag]() : null} {tag}
               </span>
             ))}

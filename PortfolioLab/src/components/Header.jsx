@@ -28,8 +28,11 @@ function Header({ activeSection, onNavigate }) {
     <header className="header">
       <div className="logo">
         <Code size={21} />
-        <span>Thomás.Dev</span>
+        <span className="Dev">
+          Thomás<span className="colorido">Dev</span>
+        </span>
       </div>
+
 
       {/* Menu de navegação */}
       <nav>
@@ -40,8 +43,8 @@ function Header({ activeSection, onNavigate }) {
           <NavLink section="projects" activeSection={activeSection} onNavigate={onNavigate}>
             {t("header.projects")}
           </NavLink>
-          <NavLink section="education" activeSection={activeSection} onNavigate={onNavigate}>
-            {t("header.education")}
+          <NavLink section="books" activeSection={activeSection} onNavigate={onNavigate}>
+            {t("header.books")}
           </NavLink>
           <NavLink section="contact" activeSection={activeSection} onNavigate={onNavigate}>
             {t("header.contact")}

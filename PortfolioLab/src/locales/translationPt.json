@@ -2,7 +2,7 @@
   "hero": {
     "name": "Thomás Ramos",
     "title": "Estudante de Engenharia de Software",
-    "description": "Sou estudante de Engenharia de Software na PUC Minas, buscando oportunidades de aprendizado e experiência prática. Tenho conhecimento em JavaScript, React, Java, C e tecnologias web como Spring Boot, Vue.js, Bootstrap, HTML5 e CSS3.",
+    "description": "Sou estudante de Engenharia de Software na PUC Minas, buscando oportunidades de aprendizado e experiência prática. Tenho conhecimento em JavaScript, React, Java, C e tecnologias web como Spring Boot, Node.js, Vue.js, Bootstrap, HTML5 e CSS3.",
     "email": "thomasramosoliveira@gmail.com",
     "phone": "+55 (37) 99975-6056",
     "location": "Belo Horizonte, MG"
@@ -10,7 +10,7 @@
   "header": {
     "about": "Sobre",
     "projects": "Projetos",
-    "education": "Formação",
+    "books": "Livros",
     "contact": "Contato"
   },
   "footer": {
@@ -36,7 +36,7 @@
   },
   "projectsDashboard": {
     "heroTitle": "Meus Projetos",
-    "heroSubtitle": "Portfólio de soluções inovadoras e desenvolvimento em diversas áreas tecnológicas.",
+    "heroSubtitle": "Alguns dos projetos que refletem minha evolução como desenvolvedor.",
     "featuredProjects": "Projetos em Destaque",
     "liveDemo": "Demo",
     "sourceCode": "Código Fonte",
@@ -71,52 +71,26 @@
     "buttonLink": "https://github.com/Thomasramos02"
   }
 ],
-  "degreeDetails": {
-  "overviewTitle": "VISÃO GERAL",
-  "degreeName": "Engenharia de Software",
-  "description": "Lista detalhada de todas as disciplinas e notas do curso de Engenharia de Software na PUC Minas, mostrando meu progresso de aprendizado em diversas áreas técnicas.",
-  "semester": "Período",
-  "course": "Disciplina",
-  "hours": "C.H.",
-  "modality": "Modalidade",
-  "grade": "Nota",
-  "status": "Status",
-  "average": "Média",
-  "courses": [
-  { "name": "Algoritmos e Estruturas de Dados I", "hours": 120, "modality": "Prática/Teórica", "grade": null, "status": null, "semester": 1 },
-  { "name": "Cálculo I", "hours": 80, "modality": "Teórica", "grade": null, "status": null, "semester": 1 },
-  { "name": "Desenvolvimento de Interfaces Web", "hours": 80, "modality": "Prática/Teórica", "grade": null, "status": null, "semester": 1 },
-  { "name": "Fundamentos de Engenharia de Software", "hours": 80, "modality": "Teórica", "grade": null, "status": null, "semester": 1 },
-  { "name": "Introdução à Computação", "hours": 70, "modality": "Prática/Teórica", "grade": null, "status": null, "semester": 1 },
-  { "name": "Trabalho Interdisciplinar: Aplicações Web", "hours": 50, "modality": "Prática", "grade": null, "status": null, "semester": 1 },
-
-  { "name": "Arquitetura de Computadores", "hours": 40, "modality": "Teórica", "grade": null, "status": null, "semester": 2 },
-  { "name": "Bancos de Dados", "hours": 80, "modality": "Prática/Teórica", "grade": null, "status": null, "semester": 2 },
-  { "name": "Cálculo II", "hours": 80, "modality": "Teórica", "grade": null, "status": null, "semester": 2 },
-  { "name": "Filosofia: Razão e Modernidade", "hours": 40, "modality": "Teórica", "grade": null, "status": null, "semester": 2 },
-  { "name": "Laboratório de Programação Modular", "hours": 40, "modality": "Prática", "grade": null, "status": null, "semester": 2 },
-  { "name": "Modelagem de Processos de Negócios", "hours": 60, "modality": "Prática/Teórica", "grade": null, "status": null, "semester": 2 },
-  { "name": "Programação Modular", "hours": 80, "modality": "Teórica", "grade": null, "status": null, "semester": 2 },
-  { "name": "Trabalho Interdisciplinar: Aplicações para Processos de Negócios", "hours": 50, "modality": "Prática", "grade": null, "status": null, "semester": 2 },
-
-  { "name": "Algoritmos e Estruturas de Dados II", "hours": 120, "modality": "Prática/Teórica", "grade": null, "status": null, "semester": 3 },
-  { "name": "Cultura Religiosa: Fenômeno Religioso", "hours": 40, "modality": "Teórica", "grade": null, "status": null, "semester": 3 },
-  { "name": "Engenharia de Requisitos de Software", "hours": 80, "modality": "Teórica", "grade": null, "status": null, "semester": 3 },
-  { "name": "Introdução à Pesquisa em Informática", "hours": 40, "modality": "Teórica", "grade": null, "status": null, "semester": 3 },
-  { "name": "Sistemas Operacionais", "hours": 80, "modality": "Teórica", "grade": null, "status": null, "semester": 3 },
-  { "name": "Trabalho Interdisciplinar: Aplicações para Cenários Reais", "hours": 45, "modality": "Prática", "grade": null, "status": null, "semester": 3 },
-
-  { "name": "Interação Humano-Computador", "hours": 90, "modality": "Teórica", "grade": null, "status": null, "semester": 4 },
-  { "name": "Laboratório de Desenvolvimento de Software", "hours": 40, "modality": "Prática", "grade": null, "status": null, "semester": 4 },
-  { "name": "Optativa I", "hours": 80, "modality": "Teórica", "grade": null, "status": null, "semester": 4 },
-  { "name": "Projeto de Software", "hours": 80, "modality": "Teórica", "grade": null, "status": null, "semester": 4 },
-  { "name": "Redes de Computadores", "hours": 80, "modality": "Teórica", "grade": null, "status": null, "semester": 4 },
-  { "name": "Teoria dos Grafos e Computabilidade", "hours": 120, "modality": "Prática/Teórica", "grade": null, "status": null, "semester": 4 },
-  { "name": "Trabalho Interdisciplinar: Aplicações para Sustentabilidade", "hours": 50, "modality": "Prática", "grade": null, "status": null, "semester": 4 }
-]
-
-},
-
+ "books": {
+  "title": "Livros",
+  "list": [
+    {
+      "cover": "/images/AprendendoAlgoritmos.jpg",
+      "title": "Aprendendo Algoritmos",
+      "author": "Aditya Bhargava",
+      "description": "Um guia ilustrado para entender algoritmos de forma simples e prática.",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Aprendendo+Algoritmos+Aditya+Bhargava"
+    },
+    {
+      "cover": "/images/ultra-aprendizado.jpg",
+      "title": "Ultra Learning",
+      "author": "Scott Young",
+      "description": "Um guia para autoaprendizado agressivo e domínio rápido de habilidades difíceis.",
+      "amazonUrl": "https://www.amazon.com.br/s?k=Ultra+Learning+Scott+Young"
+    }
+  ]
+}
+,
   "contactSection": {
     "sectionTitle": "Entre em Contato",
     "headerTitle": "Disponível para Oportunidades",

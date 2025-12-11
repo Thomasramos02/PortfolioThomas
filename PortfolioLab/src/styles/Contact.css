@@ -162,7 +162,7 @@
 }
 
 .submit-btn:hover {
-  background-color: #79c0ff;
+  background-color: oklch(60.6% 0.25 292.717);
   transform: translateY(-3px);
 }
 

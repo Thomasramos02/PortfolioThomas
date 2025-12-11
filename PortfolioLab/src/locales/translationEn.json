@@ -1,8 +1,8 @@
-  {
+{
     "hero": {
       "name": "Thomás Ramos",
       "title": "Software engineering student",
-      "description": "I’m a Software Engineering student at PUC Minas, seeking learning opportunities and practical experience. I have experience in JavaScript, React, Java, C, and web technologies such as Spring Boot, Vue.js, Bootstrap, HTML5, and CSS3",
+      "description": "I’m a Software Engineering student at PUC Minas, seeking learning opportunities and practical experience. I have experience in JavaScript, React, Java, C, and web technologies such as Spring Boot, Node.js, Vue.js, Bootstrap, HTML5, and CSS3",
       "email": "thomasramosoliveira@gmail.com",
       "phone": "+55 (37) 99975-6056",
       "location": "Belo Horizonte, MG"
@@ -10,7 +10,7 @@
     "header": {
       "about": "About",
       "projects": "Projects",
-      "education": "Education",
+      "books": "Books",
       "contact": "Contact"
     },
     "footer": {
@@ -73,48 +73,23 @@
     }
   ],
 
-  "degreeDetails": {
-  "overviewTitle": "OVERVIEW",
-  "degreeName": "Software Engineering",
-  "description": "A detailed list of all subjects and grades in the Software Engineering degree at PUC Minas, showing my learning progress and experience across various technical domains.",
-  "semester": "Semester",
-  "course": "Course",
-  "hours": "C.H.",
-  "modality": "Modality",
-  "grade": "Grade",
-  "status": "Status",
-  "average": "Average",
-  "courses": [
-    { "name": "Algorithms and Data Structures I", "hours": 120, "modality": "Practical/Theoretical", "grade": null, "status": null, "semester": 1 },
-    { "name": "Calculus I", "hours": 80, "modality": "Theoretical", "grade": null, "status": null, "semester": 1 },
-    { "name": "Web Interface Development", "hours": 80, "modality": "Practical/Theoretical", "grade": null, "status": null, "semester": 1 },
-    { "name": "Software Engineering Fundamentals", "hours": 80, "modality": "Theoretical", "grade": null, "status": null, "semester": 1 },
-    { "name": "Introduction to Computing", "hours": 70, "modality": "Practical/Theoretical", "grade": null, "status": null, "semester": 1 },
-    { "name": "Interdisciplinary Work: Web Applications", "hours": 50, "modality": "Practical", "grade": null, "status": null, "semester": 1 },
-
-    { "name": "Computer Architecture", "hours": 40, "modality": "Theoretical", "grade": null, "status": null, "semester": 2 },
-    { "name": "Databases", "hours": 80, "modality": "Practical/Theoretical", "grade": null, "status": null, "semester": 2 },
-    { "name": "Calculus II", "hours": 80, "modality": "Theoretical", "grade": null, "status": null, "semester": 2 },
-    { "name": "Philosophy: Reason and Modernity", "hours": 40, "modality": "Theoretical", "grade": null, "status": null, "semester": 2 },
-    { "name": "Modular Programming Lab", "hours": 40, "modality": "Practical", "grade": null, "status": null, "semester": 2 },
-    { "name": "Business Process Modeling", "hours": 60, "modality": "Practical/Theoretical", "grade": null, "status": null, "semester": 2 },
-    { "name": "Modular Programming", "hours": 80, "modality": "Theoretical", "grade": null, "status": null, "semester": 2 },
-    { "name": "Interdisciplinary Work: Business Processes Applications", "hours": 50, "modality": "Practical", "grade": null, "status": null, "semester": 2 },
-
-    { "name": "Algorithms and Data Structures II", "hours": 120, "modality": "Practical/Theoretical", "grade": null, "status": null, "semester": 3 },
-    { "name": "Religious Culture: Religious Phenomenon", "hours": 40, "modality": "Theoretical", "grade": null, "status": null, "semester": 3 },
-    { "name": "Software Requirements Engineering", "hours": 80, "modality": "Theoretical", "grade": null, "status": null, "semester": 3 },
-    { "name": "Introduction to Computer Science Research", "hours": 40, "modality": "Theoretical", "grade": null, "status": null, "semester": 3 },
-    { "name": "Operating Systems", "hours": 80, "modality": "Theoretical", "grade": null, "status": null, "semester": 3 },
-    { "name": "Interdisciplinary Work: Real Scenarios Applications", "hours": 45, "modality": "Practical", "grade": null, "status": null, "semester": 3 },
-
-    { "name": "Human-Computer Interaction", "hours": 90, "modality": "Theoretical", "grade": null, "status": null, "semester": 4 },
-    { "name": "Software Development Lab", "hours": 40, "modality": "Practical", "grade": null, "status": null, "semester": 4 },
-    { "name": "Elective I", "hours": 80, "modality": "Theoretical", "grade": null, "status": null, "semester": 4 },
-    { "name": "Software Project", "hours": 80, "modality": "Theoretical", "grade": null, "status": null, "semester": 4 },
-    { "name": "Computer Networks", "hours": 80, "modality": "Theoretical", "grade": null, "status": null, "semester": 4 },
-    { "name": "Graph Theory and Computability", "hours": 120, "modality": "Practical/Theoretical", "grade": null, "status": null, "semester": 4 },
-    { "name": "Interdisciplinary Work: Sustainability Applications", "hours": 50, "modality": "Practical", "grade": null, "status": null, "semester": 4 }
+ "books": {
+  "title": "Books",
+  "list": [
+    {
+      "cover": "/images/AprendendoAlgoritmos.jpg",
+      "title": "Aprendendo Algoritmos",
+      "author": "Aditya Bhargava",
+      "description": "An illustrated guide to understanding algorithms in a simple and practical way.",
+      "amazonUrl": "https://www.amazon.com/s?k=Aprendendo+Algoritmos+Aditya+Bhargava"
+    },
+    {
+      "cover": "/images/ultra-aprendizado.jpg",
+      "title": "Ultra Learning",
+      "author": "Scott Young",
+      "description": "A guide to aggressive self-learning and mastering hard skills quickly.",
+      "amazonUrl": "https://www.amazon.com/s?k=Ultra+Learning+Scott+Young"
+    }
   ]
 },
 
