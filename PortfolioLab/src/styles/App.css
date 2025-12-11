@@ -1,11 +1,13 @@
  @import url("https://use.typekit.net/ayp4kni.css");
+ @import "tailwindcss";
 :root {
   --primary-color: #ffffff;
   --background-color: #000000;
   --secondary-background-color: #1a1a1a;
-  --accent-color: #007bff;
+  --accent-color: oklch(60.6% 0.25 292.717);
   --text-color: #cccccc;
-  --card-border: rgba(255, 255, 255, 0.1);
+  --card-border: oklch(70.2% 0.183 293.541)
+  --header-a-color: oklch(70.2% 0.183 293.541)
 }
 
 body {
@@ -26,10 +28,12 @@ body {
 /* Header Moderno */
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  padding: 2.5rem 0 1.5rem;
+  padding: 1.5rem 0 1.5rem;
+  padding-left: 25px;
   position: relative;
+  margin: 0;
 }
 
 .header::after {
@@ -55,7 +59,7 @@ body {
 
 .header nav ul {
   display: flex;
-  gap: 2.5rem;
+  gap: 1.5rem;
   list-style: none;
 }
 
@@ -69,7 +73,16 @@ body {
 }
 
 .header nav a:hover {
-  color: var(--primary-color);
+  color: oklch(70.2% 0.183 293.541);
+}
+.header .logo{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.05rem;
+  padding-right: 15px;
+  font-weight: bold;
+  color: var(--accent-color);
 }
 
 .header nav a::after {
@@ -101,7 +114,7 @@ body {
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 1rem;
-  background: linear-gradient(90deg, var(--primary-color), #a0c4ff);
+  background: linear-gradient(90deg, var(--primary-color),oklch(60.6% 0.25 292.717));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -153,7 +166,7 @@ body {
   border-radius: 50%; /* deixa redondo */
   overflow: hidden;   /* corta a imagem no formato do círculo */
   border: 2px solid var(--card-border); /* opcional: borda branca */
-  box-shadow: 0 10px 30px rgba(0, 123, 255, 0.2);
+  box-shadow: 0 10px 30px oklch(70.2% 0.183 293.541);
   display: flex;
   justify-content: center;
   align-items: center;

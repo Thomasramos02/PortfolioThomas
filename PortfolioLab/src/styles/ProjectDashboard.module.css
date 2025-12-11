@@ -1,4 +1,5 @@
 @import url("https://use.typekit.net/ayp4kni.css");
+@import "tailwindcss";
 
 :root {
   --bg-color: #0f172a;

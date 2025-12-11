@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from "react-i18next";
+import { Code } from 'lucide-react';
 
 const NavLink = ({ section, activeSection, onNavigate, children }) => (
   <li>
@@ -19,7 +20,6 @@ const NavLink = ({ section, activeSection, onNavigate, children }) => (
 function Header({ activeSection, onNavigate }) {
   const { t, i18n } = useTranslation();
 
-  // Função para alternar idioma
   const toggleLanguage = () => {
     i18n.changeLanguage(i18n.language === "pt" ? "en" : "pt");
   };
@@ -27,17 +27,11 @@ function Header({ activeSection, onNavigate }) {
   return (
     <header className="header">
       <div className="logo">
-        <img 
-          src="/images/Logo.jpg" 
-          alt="Logo Thomás Ramos Oliveira" 
-          style={{ 
-            height: "80px",    // tamanho da logo
-            width: "auto",     // mantém proporção
-            borderRadius: "12px", // borda arredondada
-            objectFit: "contain" 
-          }} 
-        />
+        <Code size={21} />
+        <span>Thomás.Dev</span>
       </div>
+
+      {/* Menu de navegação */}
       <nav>
         <ul>
           <NavLink section="about" activeSection={activeSection} onNavigate={onNavigate}>

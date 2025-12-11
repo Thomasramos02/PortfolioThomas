@@ -1,4 +1,5 @@
 @import url("https://use.typekit.net/ayp4kni.css");
+@import "tailwindcss";
 
 .degree-details-container {
   background-color: #0D1117;
